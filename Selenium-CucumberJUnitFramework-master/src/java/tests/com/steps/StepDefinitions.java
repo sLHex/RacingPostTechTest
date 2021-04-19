@@ -87,30 +87,39 @@ public class StepDefinitions {
     @Then("^The date of the next big race event is in the future$")
     public void the_date_of_the_next_big_race_event_is_in_the_future() throws TestFailedException {
 
-        //Normally I'd use a POM here but given the test is small in nature it felt more efficient to grab the top date via xpath
-        WebElement element = driver.findElement(By.xpath("/html/body/div[3]/div/main/div/div[2]/div[1]/div[2]"));
-        //Pulling the string from the given element
-        String raceDateString = element.getText();
-        //Converting it to a date time
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMM yy", Locale.ENGLISH);
-        LocalDate raceDate = LocalDate.parse(raceDateString, formatter);
-        //Comparing the converted & formatted race date to the current date
-        LocalDate currentDate = LocalDate.now();
-        //compareTo method returns number of days from raceDate to currentDate
-        int result = raceDate.compareTo(currentDate);
-        //Making sure the value returned is more than zero I.E a date in the future
-        Assert.assertTrue("Checking raceDate set to future", result > 0);
+        try {
+            //Normally I'd use a POM here but given the test is small in nature it felt more efficient to grab the top date via xpath
+            WebElement element = driver.findElement(By.xpath("/html/body/div[3]/div/main/div/div[2]/div[1]/div[2]"));
+            //Pulling the string from the given element
+            String raceDateString = element.getText();
+            //Converting it to a date time
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMM yy", Locale.ENGLISH);
+            LocalDate raceDate = LocalDate.parse(raceDateString, formatter);
+            //Comparing the converted & formatted race date to the current date
+            LocalDate currentDate = LocalDate.now();
+            //compareTo method returns number of days from raceDate to currentDate
+            int result = raceDate.compareTo(currentDate);
+            //Making sure the value returned is more than zero I.E a date in the future
+            Assert.assertTrue("Checking raceDate set to future", result > 0);
+
+        } catch (Exception e) {
+            Assert.fail("Unable to confirm the date is in the future");
+        }
 
     }
 
     @Then("I see today's offers")
     public void i_see_today_s_offers() {
-        //defining element to be verified
-       WebElement element = driver.findElement(By.cssSelector("body > div.ui-canvas.js-contentWrapper.ui-advertising__skinsWrp.ui-advertising__skinsWrp_secNav > aside.ui-sidebar.ui-sidebar_marginless > div > div > div"));
-       //Maximising the window as today's offer is not visable on smaller/thinner screens
-       driver.manage().window().maximize();
-       //verify element is displayed
-        Assert.assertTrue("check for today's offer advertising side-bar",element.isDisplayed());
-    }
 
+        try {
+            //defining element to be verified
+            WebElement element = driver.findElement(By.cssSelector("body > div.ui-canvas.js-contentWrapper.ui-advertising__skinsWrp.ui-advertising__skinsWrp_secNav > aside.ui-sidebar.ui-sidebar_marginless > div > div > div"));
+            //Maximising the window as today's offer is not visable on smaller/thinner screens
+            driver.manage().window().maximize();
+            //verify element is displayed
+            Assert.assertTrue("check for today's offer advertising side-bar", element.isDisplayed());
+        } catch (Exception e) {
+            Assert.fail("Unable to validate the presence of the advertising side-bar");
+        }
+    }
 }
