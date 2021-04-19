@@ -1,0 +1,6 @@
+
+INFO Mon Apr 19 12:06:07 BST 2021: Running scenario : [ Name : That the first event date is in the future ][ SourceTagNames : [@RacingPost] ]
+INFO Mon Apr 19 12:06:08 BST 2021: WebDriver Initialized
+PASS Mon Apr 19 12:06:16 BST 2021: WebDriver Closed
+INFO Mon Apr 19 12:06:16 BST 2021: Scenario [ Name : That the first event date is in the future ] has run with 
+ [ STATUS = PASSED ]

@@ -1,0 +1,6 @@
+
+INFO Mon Apr 19 10:46:09 BST 2021: Running scenario : [ Name : Checking G-mail login ][ SourceTagNames : [@RacingPost] ]
+INFO Mon Apr 19 10:46:10 BST 2021: WebDriver Initialized
+PASS Mon Apr 19 10:46:11 BST 2021: WebDriver Closed
+INFO Mon Apr 19 10:46:11 BST 2021: Scenario [ Name : Checking G-mail login ] has run with 
+ [ STATUS = UNDEFINED ]

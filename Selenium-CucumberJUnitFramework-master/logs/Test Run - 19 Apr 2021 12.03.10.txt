@@ -1,0 +1,6 @@
+
+INFO Mon Apr 19 12:03:10 BST 2021: Running scenario : [ Name : Check Today's offers is being displayed ][ SourceTagNames : [@RacingPost] ]
+INFO Mon Apr 19 12:03:11 BST 2021: WebDriver Initialized
+PASS Mon Apr 19 12:03:18 BST 2021: WebDriver Closed
+INFO Mon Apr 19 12:03:18 BST 2021: Scenario [ Name : Check Today's offers is being displayed ] has run with 
+ [ STATUS = PASSED ]

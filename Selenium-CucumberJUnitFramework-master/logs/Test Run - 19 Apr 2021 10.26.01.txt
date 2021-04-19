@@ -1,0 +1,7 @@
+
+INFO Mon Apr 19 10:26:01 BST 2021: Running scenario : [ Name : Checking G-mail login ][ SourceTagNames : [@tag, @test1] ]
+INFO Mon Apr 19 10:26:03 BST 2021: WebDriver Initialized
+INFO Mon Apr 19 10:26:04 BST 2021: Website URL launched
+PASS Mon Apr 19 10:26:09 BST 2021: WebDriver Closed
+INFO Mon Apr 19 10:26:09 BST 2021: Scenario [ Name : Checking G-mail login ] has run with 
+ [ STATUS = FAILED ]

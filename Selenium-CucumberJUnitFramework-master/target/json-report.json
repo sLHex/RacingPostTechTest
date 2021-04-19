@@ -1,0 +1,168 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1578101100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "That the first event date is in the future",
+        "description": "",
+        "id": "testing-big-race-events;that-the-first-event-date-is-in-the-future",
+        "after": [
+          {
+            "result": {
+              "duration": 4727397900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1971183800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on “https://www.racingpost.com/racecards/”",
+            "match": {
+              "location": "StepDefinitions.i_am_on_https_www_racingpost_com_racecards()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 528469200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click the “Big Race Entries” header",
+            "match": {
+              "location": "StepDefinitions.i_click_the_Big_Race_Entries_header()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150157400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The date of the next big race event is in the future",
+            "match": {
+              "location": "StepDefinitions.the_date_of_the_next_big_race_event_is_in_the_future()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RacingPost"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 986006800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Check Today\u0027s offers is being displayed",
+        "description": "",
+        "id": "testing-big-race-events;check-today-s-offers-is-being-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 723907000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16365419100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on “https://www.racingpost.com/racecards/”",
+            "match": {
+              "location": "StepDefinitions.i_am_on_https_www_racingpost_com_racecards()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 558105600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click the “Big Race Entries” header",
+            "match": {
+              "location": "StepDefinitions.i_click_the_Big_Race_Entries_header()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 234808200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I see today\u0027s offers",
+            "match": {
+              "location": "StepDefinitions.i_see_today_s_offers()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RacingPost"
+          }
+        ]
+      }
+    ],
+    "name": "Testing big race events",
+    "description": "",
+    "id": "testing-big-race-events",
+    "keyword": "Feature",
+    "uri": "./features/RacingPostTechnicalTest.feature",
+    "tags": [
+      {
+        "name": "@RacingPost",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

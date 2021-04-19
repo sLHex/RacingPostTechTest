@@ -1,0 +1,4 @@
+com\global\Generic.class
+com\steps\StepDefinitions.class
+com\runner\FailedTestsRunner.class
+com\runner\TestRunner.class
