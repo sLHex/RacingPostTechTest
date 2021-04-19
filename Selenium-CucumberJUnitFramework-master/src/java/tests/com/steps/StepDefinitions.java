@@ -42,8 +42,7 @@ public class StepDefinitions {
         this.currentScenario = scenario;
 
         log.writeLog("INFO", "Running scenario : " + "[ Name : " + currentScenario.getName() + " ]" + "[ SourceTagNames : " + currentScenario.getSourceTagNames() + " ]");
-
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Conno\\Desktop\\Repos\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "PATH TO CHROME DRIVER TO BE ADDED HERE");
         driver = new ChromeDriver();
 
         log.writeLog("INFO", "WebDriver Initialized");
